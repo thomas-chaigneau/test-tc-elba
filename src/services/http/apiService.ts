@@ -8,7 +8,6 @@ const apiService = {
       params,
     })
     .then((response) => response.data)
-    .catch((err) => console.log(err))
 };
 
 export default apiService;
