@@ -1,14 +1,22 @@
 import React from 'react';
 import styles from './Button.module.css';
 
-const Button = () => {
+interface IButtonProps {
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  text: string;
+}
+
+const Button = ({
+  onClick,
+  text
+}: IButtonProps) => {
   return (
     <button
       type="button"
       className={styles.root}
-      onClick={() => console.log('clicked')}
+      onClick={onClick}
     >
-      click me
+      {text}
     </button>
   );
 };

@@ -1,6 +1,30 @@
 .root {
+  padding: 50px;
   width: 100%;
+  min-height: 500px;
+}
+
+.favoriteCitiesSection {
   display: flex;
   justify-content: center;
-  color: red;
+  margin: 20px 0;
+}
+
+.selectedCitySection {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.temValue {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+}
+
+.searchInput {
+  width: 200px;
+  height: 30px;
+  margin: 15px;
+  outline: none;
 }
